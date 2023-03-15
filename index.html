@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Funkoshop - Tu tienda online de Funko Pop!</title>
+    <title>FunkoShop - Tu tienda online de Funko Pop!</title>
     <meta
       name="description"
       content="Bienvenido a Funkoshop, tu tienda en línea especializada en Funko Pop! Encuentra aquí las mejores figuras de colección de tus personajes favoritos."
@@ -43,5 +43,175 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <picture class="logo">
+        <img
+          src="img/branding/logo_light_horizontal.svg"
+          alt="FunkoShop logo"
+          class="logo__image"
+        />
+      </picture>
+      <nav class="menu">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contacto</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Login</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Carrito</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="hero">
+        <img
+          src="img/funkos-banner.webp"
+          alt="FunkoShop Banner"
+          class="hero__image"
+        />
+        <h2 class="hero__title">Nuevos Ingresos</h2>
+        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
+        <button class="hero__button">Shop</button>
+      </section>
+      <section id="articles">
+        <!-- Articulo 1 -->
+        <article class="article article--left">
+          <div class="article__content">
+            <h2 class="article__title">start wars & the mandalorian</h2>
+            <p class="article__description">
+              Disfruta de una saga que sigue agregando personajes a su
+              colección.
+            </p>
+            <hr class="article__line" />
+            <button class="article__button">Ver colección</button>
+          </div>
+          <figure class="article__image">
+            <img src="img/star-wars/baby-yoda-1.webp" alt="Baby Yoda image" />
+          </figure>
+        </article>
+        <!-- Articulo 2 -->
+        <article class="article article--right">
+          <div class="article__content">
+            <h2 class="article__title">pokemon indigo</h2>
+            <p class="article__description">
+              Atrapa todos los que puedas y disfruta de una colección llena de
+              amigos.
+            </p>
+            <hr class="article__line" />
+            <button class="article__button">Ver colección</button>
+          </div>
+          <figure class="article__image">
+            <img src="img/pokemon/vulpix-1.webp" alt="Vulpix image" />
+          </figure>
+        </article>
+        <!-- Articulo 3 -->
+        <article class="article article--left">
+          <div class="article__content">
+            <h2 class="article__title">harry potter</h2>
+            <p class="article__description">
+              Revive los recuerdos de una saga llena de magia y encanto.
+            </p>
+            <hr class="article__line" />
+            <button class="article__button">Ver colección</button>
+          </div>
+          <figure class="article__image">
+            <img
+              src="img/harry-potter/snape-patronus-1.webp"
+              alt="Snape Patronus image"
+            />
+          </figure>
+        </article>
+      </section>
+      <section id="latest-releases">
+        <h2 class="latest-releases__title">Ultimos lanzamientos</h2>
+        <div class="latest-releases__items">
+          <!-- Item 1 -->
+          <article class="latest-releases__item">
+            <figure class="latest-releases-item__image">
+              <button class="latest-releases-item__button">nuevo</button>
+              <img src="img/star-wars/trooper-1.webp" alt="Trooper image" />
+            </figure>
+            <div class="latest-releases-item__info">
+              <h4 class="latest-releases-item__saga">star wars</h4>
+              <h3 class="latest-releases-item__name">
+                stromtrooper lightsaber
+              </h3>
+              <div class="latest-releases-item__price">$ 1799,99-</div>
+              <div class="latest-releases-item__amount-fees">
+                3 cuotas sin interés
+              </div>
+            </div>
+          </article>
+          <!-- Item 2 -->
+          <article class="latest-releases__item">
+            <figure class="latest-releases-item__image">
+              <button class="latest-releases-item__button">nuevo</button>
+              <img src="img/pokemon/pidgeotto-1.webp" alt="Pidgeotto image" />
+            </figure>
+            <div class="latest-releases-item__info">
+              <h4 class="latest-releases-item__saga">pokemon</h4>
+              <h3 class="latest-releases-item__name">pidgeotto</h3>
+              <div class="latest-releases-item__price">$ 1799,99-</div>
+              <div class="latest-releases-item__amount-fees">
+                3 cuotas sin interés
+              </div>
+            </div>
+          </article>
+          <!-- Item 3 -->
+          <article class="latest-releases__item">
+            <figure class="latest-releases-item__image">
+              <button class="latest-releases-item__button">nuevo</button>
+              <img
+                src="img/harry-potter/luna-1.webp"
+                alt="Luna Lovegod Lion Mask image"
+              />
+            </figure>
+            <div class="latest-releases-item__info">
+              <h4 class="latest-releases-item__saga">harry potter</h4>
+              <h3 class="latest-releases-item__name">
+                luna lovegood lion mask
+              </h3>
+              <div class="latest-releases-item__price">$ 1799,99-</div>
+              <div class="latest-releases-item__amount-fees">
+                3 cuotas sin interés
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer__content">
+        <nav class="footer__menu">
+          <ol class="footer-menu__items">
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">shop</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">registrese</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">ingresar</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">contacto</a>
+            </li>
+          </ol>
+        </nav>
+        <picture class="footer__image">
+          <img src="img/branding/isotype.svg" alt="FunkoShop logo" />
+        </picture>
+      </div>
+      <div class="footer__copyright">
+        All rights reserved 2022 - FunkoShop &copy;
+      </div>
+    </footer>
+  </body>
 </html>
