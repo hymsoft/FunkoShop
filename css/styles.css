@@ -8,3 +8,135 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
+header {
+  background-color: #30343f;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+/* Menu */
+.menu_items {
+  list-style: none;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero */
+.hero__title {
+  font-weight: bold;
+  font-size: 2.375em;
+}
+
+.hero__text {
+  font-size: 1.125em;
+}
+
+.hero__button {
+  min-width: 13em;
+  height: 2.9em;
+  border-radius: 2.9em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.25em;
+  background-color: gray;
+  text-transform: uppercase;
+}
+
+/* Articulos */
+.article__title {
+  font-weight: 500;
+  font-size: 2.875em;
+  text-transform: uppercase;
+}
+
+.article__description {
+  font-size: 1.5rem;
+  color: #4f4f4f;
+}
+
+.article__line {
+  border-top: 2px solid #ff3333;
+}
+
+.article__button {
+  min-width: 18em;
+  height: 4em;
+  border-radius: 4em;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5em;
+  background-color: #30343f;
+  text-transform: uppercase;
+}
+
+/* Ultimos Lanzamientos */
+.latest-releases__title {
+  font-weight: 700;
+  font-size: 2.9em;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.latest-releases-item__info {
+  text-transform: uppercase;
+}
+
+.latest-releases-item__button {
+  width: 6em;
+  height: 1.9em;
+  background-color: #ff3333;
+  color: #ffffff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.latest-releases-item__saga {
+  font-size: 0.9em;
+  color: #333333;
+}
+.latest-releases-item__name {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #111111;
+}
+.latest-releases-item__price {
+  font-size: 1em;
+  color: #333333;
+}
+.latest-releases-item__amount-fees {
+  font-weight: 700;
+  font-size: 0.75em;
+  color: #1d84b5;
+}
+
+/* Footer */
+#footer {
+  background-color: #30343f;
+}
+
+.footer-menu_items {
+  list-style: none;
+}
+
+.footer-menu__link {
+  font-weight: 500;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.footer__copyright {
+  font-weight: 500;
+  font-size: 1.25em;
+  color: #ffffff;
+}
