@@ -141,3 +141,20 @@ button {
   font-size: 1.25em;
   color: #ffffff;
 }
+
+/* === shop === */
+/* form */
+.utilities__label {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.utilities__input {
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.utilities__check {
+  font-size: 1.2em;
+}

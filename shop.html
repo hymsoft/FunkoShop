@@ -71,40 +71,55 @@
     </header>
     <aside class="utilities">
       <form>
-        <label for="item">buscar</label><br />
+        <label for="item" class="utilities__label">buscar</label><br />
         <input
           type="text"
           id="item"
           name="item"
           placeholder="Ítem o categoría"
+          class="utilities__input"
         /><br />
 
-        <label for="sort">Ordenar por</label><br />
-        <select id="sort" name="sort">
+        <label for="sort" class="utilities__label">Ordenar por</label><br />
+        <select id="sort" name="sort" class="utilities__input">
           <option value="mayor-menor" selected>Mayor a menor</option>
           <option value="menor-mayor">Menor a mayor</option></select
         ><br />
 
-        <p>precio</p>
-        <label for="min-price">min</label>
-        <input type="number" id="min-price" name="min-price" /> <span> - </span>
-        <label for="max-price">max</label>
-        <input type="number" id="max-price" name="max-price" /><br />
+        <p class="utilities__label">precio</p>
+        <label for="min-price" class="utilities__check">min</label>
+        <input
+          type="number"
+          id="min-price"
+          name="min-price"
+          class="utilities__input"
+        />
+        <span> - </span>
+        <label for="max-price" class="utilities__check">max</label>
+        <input
+          type="number"
+          id="max-price"
+          name="max-price"
+          class="utilities__input"
+        /><br />
 
-        <p>filtrar</p>
+        <p class="utilities__label">filtrar</p>
         <input type="checkbox" id="new" name="new" value="new" />
-        <label for="new">Nuevos</label><br />
+        <label for="new" class="utilities__check">Nuevos</label><br />
         <input type="checkbox" id="offer" name="offer" value="offer" />
-        <label for="offer">Ofertas</label><br />
+        <label for="offer" class="utilities__check">Ofertas</label><br />
         <input
           type="checkbox"
           id="special-edition"
           name="special-edition"
           value="special-edition"
         />
-        <label for="special-edition">Edición especial</label><br />
+        <label for="special-edition" class="utilities__check"
+          >Edición especial</label
+        ><br />
         <input type="checkbox" id="favorite" name="favorite" value="favorite" />
-        <label for="favorite">Favoritos</label><br /><br />
+        <label for="favorite" class="utilities__check">Favoritos</label
+        ><br /><br />
       </form>
     </aside>
     <main class="main">
