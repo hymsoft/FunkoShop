@@ -6,13 +6,13 @@
     <title>FunkoShop - Tu tienda online de Funko Pop!</title>
     <link
       rel="shortcut icon"
-      href="img/branding/isotype.ico"
+      href="../../img/branding/isotype.ico"
       type="image/x-icon"
     />
     <!-- SEO -->
     <meta
       name="description"
-      content="Bienvenido a Funkoshop, tu tienda en línea especializada en Funko Pop! Encuentra aquí las mejores figuras de colección de tus personajes favoritos."
+      content="Shop en linea de la tienda FunkoShop. Esperamos que te sientas cómodo y disfrutes de nuestros artículos."
     />
     <meta
       name="keywords"
@@ -29,7 +29,7 @@
     />
     <meta
       property="og:description"
-      content="Bienvenido a Funkoshop, tu tienda en línea especializada en Funko Pop! Encuentra aquí las mejores figuras de colección de tus personajes favoritos."
+      content="Shop en linea de la tienda FunkoShop. Esperamos que te sientas cómodo y disfrutes de nuestros artículos."
     />
     <!-- <meta property="og:url" content="https://www.tutienda.com/"> -->
     <!-- <meta property="og:image" content="https://www.tutienda.com/images/logo-funkoshop.jpg"> -->
@@ -43,17 +43,17 @@
     />
     <meta
       name="twitter:description"
-      content="Bienvenido a Funkoshop, tu tienda en línea especializada en Funko Pop! Encuentra aquí las mejores figuras de colección de tus personajes favoritos."
+      content="Shop en linea de la tienda FunkoShop. Esperamos que te sientas cómodo y disfrutes de nuestros artículos."
     />
     <!-- <meta name="twitter:image" content="https://www.tutienda.com/images/logo-funkoshop.jpg"> -->
     <!-- Estilos -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
   </head>
   <body>
     <header class="header">
       <picture class="logo">
         <img
-          src="img/branding/logo_light_horizontal.svg"
+          src="../../img/branding/logo_light_horizontal.svg"
           alt="FunkoShop logo"
           class="logo__image"
         />
@@ -61,7 +61,7 @@
       <nav class="menu">
         <ul class="menu__items">
           <li class="menu__item">
-            <a href="/front/shop.html" class="menu__link">Shop</a>
+            <a href="../../index.html" class="menu__link">Home</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">Contacto</a>
@@ -75,76 +75,56 @@
         </ul>
       </nav>
     </header>
+
     <main class="main">
-      <section id="hero">
-        <img
-          src="img/funkos-banner.webp"
-          alt="FunkoShop Banner"
-          class="hero__image"
-        />
-        <h2 class="hero__title">Nuevos Ingresos</h2>
-        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
-        <button class="hero__button">Shop</button>
+      <!-- Item -->
+      <section class="item">
+        <figure class="item__image">
+          <img src="../../img/pokemon/pidgeotto-1.webp" alt="Trooper image" />
+        </figure>
+        <div class="item__info">
+          <h4 class="item__saga">pokemon</h4>
+          <h3 class="item__name">pidgeotto</h3>
+          <p class="item__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
+            laudantium provident, placeat dolor corporis deleniti? Id harum
+            architecto molestias voluptate soluta! Aliquam enim voluptas, et
+            magni necessitatibus impedit debitis temporibus?
+          </p>
+          <div class="item__price">$ 1799,99-</div>
+          <div class="item__count">
+            <span class="item-count__button">+</span>
+            <input type="number" class="item-count__amount" />
+            <span class="item-count__button">-</span>
+            <button class="item__button--shop-item">
+              <a href="#">Agregar al carrito</a>
+            </button>
+          </div>
+          <div class="item__amount-fees">
+            <span
+              ><a href="" class="item__payment-methods"
+                >Ver metodos de pago</a
+              ></span
+            >
+            -
+            <span> 3 cuotas sin interés </span>
+          </div>
+        </div>
       </section>
-      <section id="featured">
-        <!-- Articulo 1 -->
-        <article class="featured featured--left">
-          <div class="featured__content">
-            <h2 class="featured__title">start wars & the mandalorian</h2>
-            <p class="featured__description">
-              Disfruta de una saga que sigue agregando personajes a su
-              colección.
-            </p>
-            <hr class="featured__line" />
-            <button class="featured__button">Ver colección</button>
-          </div>
-          <figure class="featured__image">
-            <img src="img/star-wars/baby-yoda-1.webp" alt="Baby Yoda image" />
-          </figure>
-        </article>
-        <!-- Articulo 2 -->
-        <article class="featured featured--right">
-          <div class="featured__content">
-            <h2 class="featured__title">pokemon indigo</h2>
-            <p class="featured__description">
-              Atrapa todos los que puedas y disfruta de una colección llena de
-              amigos.
-            </p>
-            <hr class="featured__line" />
-            <button class="featured__button">Ver colección</button>
-          </div>
-          <figure class="featured__image">
-            <img src="img/pokemon/vulpix-1.webp" alt="Vulpix image" />
-          </figure>
-        </article>
-        <!-- Articulo 3 -->
-        <article class="featured featured--left">
-          <div class="featured__content">
-            <h2 class="featured__title">harry potter</h2>
-            <p class="featured__description">
-              Revive los recuerdos de una saga llena de magia y encanto.
-            </p>
-            <hr class="featured__line" />
-            <button class="featured__button">Ver colección</button>
-          </div>
-          <figure class="featured__image">
-            <img
-              src="img/harry-potter/snape-patronus-1.webp"
-              alt="Snape Patronus image"
-            />
-          </figure>
-        </article>
-      </section>
-      <section id="latest-releases">
+      <!-- Productos Relacionados -->
+      <section class="related-products">
         <h2 class="latest-releases__title">Ultimos lanzamientos</h2>
         <div class="latest-releases__items">
           <!-- Item 1 -->
           <article class="item">
             <figure class="item__image">
               <button class="item__button">
-                <a href="front/items/i01_stormtrooper_lightsaber.html">nuevo</a>
+                <a href="i01_stormtrooper_lightsaber.html">nuevo</a>
               </button>
-              <img src="img/star-wars/trooper-1.webp" alt="Trooper image" />
+              <img
+                src="../../img/star-wars/trooper-1.webp"
+                alt="Trooper image"
+              />
             </figure>
             <div class="item__info">
               <h4 class="item__saga">star wars</h4>
@@ -157,9 +137,12 @@
           <article class="item">
             <figure class="item__image">
               <button class="item__button">
-                <a href="front/items/i02_pidgeotto.html">nuevo</a>
+                <a href="i02_pidgeotto.html">nuevo</a>
               </button>
-              <img src="img/pokemon/pidgeotto-1.webp" alt="Pidgeotto image" />
+              <img
+                src="../../img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
             </figure>
             <div class="item__info">
               <h4 class="item__saga">pokemon</h4>
@@ -172,10 +155,10 @@
           <article class="item">
             <figure class="item__image">
               <button class="item__button">
-                <a href="front/items/i03_luna_lovegood_lion_mask.html">nuevo</a>
+                <a href="i03_luna_lovegood_lion_mask.html">nuevo</a>
               </button>
               <img
-                src="img/harry-potter/luna-1.webp"
+                src="../../img/harry-potter/luna-1.webp"
                 alt="Luna Lovegod Lion Mask image"
               />
             </figure>
@@ -194,7 +177,7 @@
         <nav class="footer__menu">
           <ol class="footer-menu__items">
             <li class="footer-menu__item">
-              <a href="/front/shop.html" class="footer-menu__link">shop</a>
+              <a href="../../index.html" class="footer-menu__link">home</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">registrese</a>
@@ -208,7 +191,7 @@
           </ol>
         </nav>
         <picture class="footer__image">
-          <img src="img/branding/isotype.svg" alt="FunkoShop logo" />
+          <img src="../../img/branding/isotype.svg" alt="FunkoShop logo" />
         </picture>
       </div>
       <div class="footer__copyright">
