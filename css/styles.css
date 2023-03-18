@@ -60,12 +60,12 @@ button {
 }
 
 .featured__description {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #4f4f4f;
 }
 
 .featured__line {
-  border-top: 2px solid #ff3333;
+  border-top: 0.125rem solid #ff3333;
 }
 
 .featured__button {
@@ -188,4 +188,52 @@ button {
   font-size: 1.2em;
 }
 
-/* Article */
+/* login */
+
+.login__title {
+  font-weight: 500;
+  font-size: 2.625em;
+  text-transform: uppercase;
+}
+
+.login__inputs label {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.login__inputs input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid red;
+  font-size: 1.5em;
+}
+
+.login__inputs input:focus {
+  outline: none;
+  background-color: gray;
+}
+
+.login__footer label {
+  font-weight: 500;
+  font-size: 1.125em;
+}
+
+.login__button {
+  width: 6.25em;
+  height: 2.3em;
+  background-color: #ff3333;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.login__button a {
+  font-size: 0.75em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login-footer__line2 a {
+  color: #1d84b5;
+  text-decoration: none;
+}
