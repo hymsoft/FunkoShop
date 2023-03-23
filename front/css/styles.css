@@ -90,3 +90,220 @@ ul {
   color: var(--primary-color);
   background-color: var(--white);
 }
+
+/* Hero */
+.hero {
+  width: 100%;
+  height: 384px;
+  --opacidad-negro: 0.4;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--opacidad-negro)),
+      rgba(0, 0, 0, var(--opacidad-negro))
+    ),
+    url(../img/funkos-banner.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  margin-left: 10%;
+}
+
+.hero__title {
+  font-weight: var(--font-bold);
+  font-size: 2.37em;
+  color: var(--white);
+}
+
+.hero__text {
+  font-size: 1.125em;
+  color: var(--white);
+  margin-top: 0.625em;
+}
+
+.hero__button {
+  display: block;
+  margin-top: 3em;
+  height: 2.93em;
+  max-width: 13.18em;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 2.93em;
+  font-weight: var(--font-medium);
+  font-size: 1.25em;
+  text-align: center;
+  line-height: 2.93em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Features */
+.collections {
+  margin-top: 4.25em;
+}
+
+.card-collection--reverse {
+  flex-direction: row-reverse;
+}
+
+.card-collection {
+  max-width: 76.25em;
+  height: 37.5em;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.card-collection__content {
+  /* background-color: yellow; */
+}
+
+.card-collection-text__container {
+  width: 95%;
+}
+
+.card-collection__image {
+  width: 37.5em;
+  height: 37.5em;
+}
+
+.card-collection__title {
+  font-weight: var(--font-medium);
+  font-size: 2.875em;
+}
+
+.card-collection__description {
+  margin-top: 0.375em;
+  font-size: 1.5em;
+  color: var(--gray1);
+}
+
+.card-collection__line {
+  margin-top: 1.75em;
+  border: 3px solid var(--red1);
+}
+
+.card-collection__button {
+  display: block;
+  margin-top: 3em;
+  height: 4.0625em;
+  max-width: 18.125em;
+  background-color: var(--gray2);
+  color: var(--white);
+  border-radius: 2.93em;
+  font-weight: var(--font-medium);
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 4.0625em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-collection__button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Latest-releases */
+
+.latest-releases {
+  max-width: 76.25em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.latest-releases__items {
+  margin-top: 3.75em;
+  padding: 10px 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* gap: 0.31em; */
+  /* justify-content: space-between; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+}
+
+.latest-releases__title {
+  font-weight: var(--font-bold);
+  font-size: 2.875em;
+}
+
+/* ITEM */
+
+.item {
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  flex: 0 0 21.875em;
+  scroll-snap-align: center;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.item__image {
+  width: 21.875em;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.item__image img {
+  width: 100%;
+}
+
+.item__button {
+  display: block;
+  width: 6.25em;
+  height: 1.87em;
+  background-color: var(--red1);
+  color: var(--white);
+  font-weight: var(--font-medium);
+  font-size: 0.875em;
+  line-height: 1.87em;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  right: 0;
+}
+
+/* .item__button:hover {
+  background-color: var(--black);
+  color: var(--white);
+} */
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.81em;
+  padding: 0.625em;
+}
+
+.item__seaga {
+  font-weight: var(--font-medium);
+  font-size: 0.875em;
+}
+
+.item__name {
+  font-weight: var(--font-bold);
+  font-size: 1.125em;
+}
+
+.item__price {
+  font-weight: var(--font-regular);
+  font-size: 1em;
+  color: var(--gray1);
+}
+.item__amount-fees {
+  font-weight: var(--font-bold);
+  font-size: 0.75em;
+  color: var(--blue1);
+}
