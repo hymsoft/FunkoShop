@@ -4,6 +4,7 @@
   --primary-color: #30343f;
   --white: #ffffff;
   --black: #111111;
+  --gray0: #857b7b;
   --gray1: #4f4f4f;
   --gray2: #30343f;
   --red1: #ff3333;
@@ -160,10 +161,6 @@ ul {
   overflow: hidden;
   display: flex;
   align-items: center;
-}
-
-.card-collection__content {
-  /* background-color: yellow; */
 }
 
 .card-collection-text__container {
@@ -329,9 +326,6 @@ ul {
   align-items: center;
 }
 
-.footer__menu {
-}
-
 .footer-menu__items {
   display: flex;
   flex-direction: column;
@@ -368,4 +362,163 @@ ul {
   color: var(--white);
   text-align: center;
   padding: 1em 0;
+}
+
+/* SHOP */
+/* Utilities */
+.utilities {
+  width: 240px;
+}
+
+.form {
+  background-color: var(--primary-color);
+  color: var(--white);
+  /* width: 25rem; */
+  border-end-end-radius: 8px;
+  padding: 0.5em;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.form__title {
+  font-weight: --font-medium;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+/* Inputs tipo text,number,email,password */
+.input__container {
+  position: relative;
+  height: 2.8em;
+  width: 90%;
+  margin-bottom: 1.1em;
+}
+
+.input-price__container {
+  height: 2.8em;
+  width: 90%;
+  display: flex;
+  gap: 5px;
+}
+
+.input__container input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--gray0);
+  color: var(--white);
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 0 1.25em;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.input__container input:focus + label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 0.9em;
+  font-weight: var(--bold);
+  color: var(--gray0);
+}
+
+.input__container input:not(:placeholder-shown) + label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 0.9em;
+  font-weight: var(--bold);
+}
+
+.input__container input:focus {
+  border: 2px solid var(--gray0);
+}
+
+.input__container label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: var(--primary-color);
+  color: var(--gray0);
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+/* Inputs radio buttons y checkbox */
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  display: none;
+}
+
+.form .radiobutton__container label,
+.form .checkbox__container label {
+  color: var(--gray0);
+  padding: 5px 15px 5px 47px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form .radiobutton__container label:before,
+.form .checkbox__container label:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-color: none;
+  border: 3px solid var(--gray0);
+  border-radius: 100%;
+  position: absolute;
+  left: 15px;
+  top: 4px;
+}
+
+.form .checkbox__container label:before {
+  border-radius: 3px;
+}
+
+.form input[type="radio"]:checked + label,
+.form input[type="checkbox"]:checked + label {
+  padding: 5px 15px;
+  background-color: var(--gray0);
+  border-radius: 2px;
+  color: white;
+}
+
+.form input[type="radio"]:checked + label:before,
+.form input[type="checkbox"]:checked + label:before {
+  display: none;
+}
+
+/* Styling button submit */
+
+.form__submit {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--gray0);
+  color: var(--white);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 1.9em;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form__submit:hover {
+  background-color: var(--gray1);
+  transform: translateY(-2px);
 }
