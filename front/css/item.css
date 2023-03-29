@@ -1,0 +1,71 @@
+/* ITEM */
+
+.item {
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  flex: 0 0 21.875em;
+  scroll-snap-align: center;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.item__image {
+  width: 21.875em;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.item__image img {
+  width: 100%;
+}
+
+.item__button {
+  display: block;
+  width: 6.25em;
+  height: 1.87em;
+  background-color: var(--red1);
+  color: var(--white);
+  font-weight: var(--font-medium);
+  font-size: 0.875em;
+  line-height: 1.87em;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  right: 0;
+}
+
+/* .item__button:hover {
+    background-color: var(--black);
+    color: var(--white);
+  } */
+
+.item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.81em;
+  padding: 0.625em;
+}
+
+.item__seaga {
+  font-weight: var(--font-medium);
+  font-size: 0.875em;
+}
+
+.item__name {
+  font-weight: var(--font-bold);
+  font-size: 1.125em;
+}
+
+.item__price {
+  font-weight: var(--font-regular);
+  font-size: 1em;
+  color: var(--gray1);
+}
+.item__amount-fees {
+  font-weight: var(--font-bold);
+  font-size: 0.75em;
+  color: var(--blue1);
+}

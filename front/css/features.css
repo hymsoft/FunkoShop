@@ -1,0 +1,62 @@
+/* Features */
+.collections {
+  margin-top: 4.25em;
+}
+
+.card-collection--reverse {
+  flex-direction: row-reverse;
+}
+
+.card-collection {
+  max-width: 76.25em;
+  height: 37.5em;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.card-collection-text__container {
+  width: 95%;
+}
+
+.card-collection__image {
+  width: 37.5em;
+  height: 37.5em;
+}
+
+.card-collection__title {
+  font-weight: var(--font-medium);
+  font-size: 2.875em;
+}
+
+.card-collection__description {
+  margin-top: 0.375em;
+  font-size: 1.5em;
+  color: var(--gray1);
+}
+
+.card-collection__line {
+  margin-top: 1.75em;
+  border: 3px solid var(--red1);
+}
+
+.card-collection__button {
+  display: block;
+  margin-top: 3em;
+  height: 4.0625em;
+  max-width: 18.125em;
+  background-color: var(--gray2);
+  color: var(--white);
+  border-radius: 2.93em;
+  font-weight: var(--font-medium);
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 4.0625em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-collection__button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}

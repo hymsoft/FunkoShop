@@ -47,51 +47,165 @@
       </nav>
     </header>
 
-    <aside class="utilities">
-      <form action="" class="form">
-        <h2 class="form__title">Buscar</h2>
-        <div class="input__container">
-          <input type="text" placeholder="a" id="item" />
-          <label for="item">Item o categoría</label>
-        </div>
-
-        <h2 class="form__title">Precio</h2>
-        <div class="input-price__container">
+    <div class="main__container">
+      <aside class="utilities">
+        <form action="" class="form">
+          <h2 class="form__title">Buscar</h2>
           <div class="input__container">
-            <input type="number" placeholder="a" id="minimo" />
-            <label for="minimo">Mínimo</label>
+            <input type="text" placeholder="a" id="item" />
+            <label for="item">Item o categoría</label>
           </div>
-          <div class="input__container">
-            <input type="number" placeholder="a" id="maximo" />
-            <label for="maximo">Máximo</label>
+
+          <h2 class="form__title">Precio</h2>
+          <div class="input-price__container">
+            <div class="input__container">
+              <input type="number" placeholder="a" id="minimo" />
+              <label for="minimo">Mínimo</label>
+            </div>
+            <div class="input__container">
+              <input type="number" placeholder="a" id="maximo" />
+              <label for="maximo">Máximo</label>
+            </div>
           </div>
-        </div>
 
-        <h2 class="form__title">Ordenar por</h2>
-        <div class="radiobutton__container">
-          <input type="radio" name="ordenarpor" id="menor" />
-          <label for="menor">Menor</label>
+          <h2 class="form__title">Ordenar por</h2>
+          <div class="radiobutton__container">
+            <input type="radio" name="ordenarpor" id="menor" />
+            <label for="menor">Menor</label>
 
-          <input type="radio" name="ordenarpor" id="mayor" />
-          <label for="mayor">Mayor</label>
-        </div>
+            <input type="radio" name="ordenarpor" id="mayor" />
+            <label for="mayor">Mayor</label>
+          </div>
 
-        <h2 class="form__title">Filtrar por</h2>
-        <div class="checkbox__container">
-          <input type="checkbox" name="nuevo" id="nuevo" />
-          <label for="nuevo">Nuevo</label><br />
-          <input type="checkbox" name="ofertas" id="ofertas" />
-          <label for="ofertas">Ofertas</label><br />
-          <input type="checkbox" name="edicionespecial" id="edicionespecial" />
-          <label for="edicionespecial">Edicion Especial</label><br />
-          <input type="checkbox" name="favoritos" id="favoritos" />
-          <label for="favoritos">favoritos</label><br />
-        </div>
-        <!--     <input type="submit" class="form__submit" value="Sign up"> -->
-      </form>
-    </aside>
-
-    <main class="main"></main>
+          <h2 class="form__title">Filtrar por</h2>
+          <div class="checkbox__container">
+            <input type="checkbox" name="nuevo" id="nuevo" />
+            <label for="nuevo">Nuevo</label><br />
+            <input type="checkbox" name="ofertas" id="ofertas" />
+            <label for="ofertas">Ofertas</label><br />
+            <input
+              type="checkbox"
+              name="edicionespecial"
+              id="edicionespecial"
+            />
+            <label for="edicionespecial">Edicion Especial</label><br />
+            <input type="checkbox" name="favoritos" id="favoritos" />
+            <label for="favoritos">favoritos</label><br />
+          </div>
+          <!--     <input type="submit" class="form__submit" value="Sign up"> -->
+        </form>
+      </aside>
+      <main class="shop text--upper">
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="../shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="../shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <article class="item">
+          <a href="../shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="../shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="../shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <article class="item">
+          <a href="../shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="../shop/items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+      </main>
+    </div>
     <footer class="footer">
       <div class="footer__content">
         <nav class="footer__menu text--upper">

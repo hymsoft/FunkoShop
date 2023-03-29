@@ -1,20 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
 
 :root {
-  --primary-color: #30343f;
-  --white: #ffffff;
-  --black: #111111;
-  --gray0: #857b7b;
-  --gray1: #4f4f4f;
-  --gray2: #30343f;
-  --red1: #ff3333;
-  --blue1: #1d84b5;
-  --font-light: 300;
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-  --font-extraBold: 800;
+  /* --primary-solid: #ff3333; */
+  --primary-solid: rgba(255, 51, 51, 1);
+  --primary-900: rgba(255, 51, 51, 0.9);
+  --primary-500: rgba(255, 51, 51, 0.5);
+  --primary-300: rgba(255, 51, 51, 0.3);
+  /* --secondary-solid: #1d84b5; */
+  --secondary-solid: rgba(29, 132, 181, 1);
+  --secondary-900: rgba(29, 132, 181, 0.9);
+  --secondary-500: rgba(29, 132, 181, 0.5);
+  --secondary-300: rgba(29, 132, 181, 0.3);
+  /* --dark-solid: #1f1f1f; */
+  --dark-solid: rgba(31, 31, 31, 1);
+  --dark-900: rgba(31, 31, 31, 0.9);
+  --dark-500: rgba(31, 31, 31, 0.5);
+  --dark-300: rgba(255, 51, 51, 0.3);
+  --dark-bg-solid: #30343f;
+  --light-bg-solid: #fafaff;
+  --light-font-solid: #ffffff;
+
+  /* Typography */
+  --base-font: "Inter", sans-serif;
+  --alternative-font: "Raleway", sans-serif;
+
+  /* Font Weight:  */
+  --thin: 100;
+  --light: 300;
+  --regular: 400;
+  --mediu: 500;
+  --semibold: 600;
+  --bold: 700;
+  --black: 900;
+
+  /* Font Sizes */
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge: 3em;
+  --font-large: 2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall: 1.2em;
+
+  /* Spacings */
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -24,501 +61,14 @@
 html {
   scroll-behavior: smooth;
   user-select: none;
+  font-size: 62.5%;
+  font-family: var(--base-font);
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  color: var(--black);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
+  font-family: var(--alternative-font);
 }
 
 .text--upper {
   text-transform: uppercase;
-}
-
-/* Header */
-.header {
-  height: 9em;
-  background-color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.logo {
-  height: 65px;
-  overflow: hidden;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-}
-
-.menu {
-  height: 1.875em;
-  line-height: 1.875em;
-}
-
-.menu__items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu__item {
-  padding: 0 0.625em;
-}
-
-.menu__link {
-  color: var(--white);
-  font-weight: var(--font-medium);
-  font-size: 1.25em;
-  padding: 0.31em;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: default;
-}
-
-.menu__link:hover {
-  color: var(--primary-color);
-  background-color: var(--white);
-}
-
-/* Hero */
-.hero {
-  width: 100%;
-  height: 384px;
-  --opacidad-negro: 0.4;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, var(--opacidad-negro)),
-      rgba(0, 0, 0, var(--opacidad-negro))
-    ),
-    url(../img/funkos-banner.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-.hero__content {
-  margin-left: 10%;
-}
-
-.hero__title {
-  font-weight: var(--font-bold);
-  font-size: 2.37em;
-  color: var(--white);
-}
-
-.hero__text {
-  font-size: 1.125em;
-  color: var(--white);
-  margin-top: 0.625em;
-}
-
-.hero__button {
-  display: block;
-  margin-top: 3em;
-  height: 2.93em;
-  max-width: 13.18em;
-  background-color: var(--white);
-  color: var(--black);
-  border-radius: 2.93em;
-  font-weight: var(--font-medium);
-  font-size: 1.25em;
-  text-align: center;
-  line-height: 2.93em;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.hero__button:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-/* Features */
-.collections {
-  margin-top: 4.25em;
-}
-
-.card-collection--reverse {
-  flex-direction: row-reverse;
-}
-
-.card-collection {
-  max-width: 76.25em;
-  height: 37.5em;
-  margin: 0 auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-}
-
-.card-collection-text__container {
-  width: 95%;
-}
-
-.card-collection__image {
-  width: 37.5em;
-  height: 37.5em;
-}
-
-.card-collection__title {
-  font-weight: var(--font-medium);
-  font-size: 2.875em;
-}
-
-.card-collection__description {
-  margin-top: 0.375em;
-  font-size: 1.5em;
-  color: var(--gray1);
-}
-
-.card-collection__line {
-  margin-top: 1.75em;
-  border: 3px solid var(--red1);
-}
-
-.card-collection__button {
-  display: block;
-  margin-top: 3em;
-  height: 4.0625em;
-  max-width: 18.125em;
-  background-color: var(--gray2);
-  color: var(--white);
-  border-radius: 2.93em;
-  font-weight: var(--font-medium);
-  font-size: 1.5em;
-  text-align: center;
-  line-height: 4.0625em;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.card-collection__button:hover {
-  background-color: var(--black);
-  color: var(--white);
-}
-
-/* Latest-releases */
-
-.latest-releases {
-  max-width: 76.25em;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.latest-releases__items {
-  margin-top: 3.75em;
-  padding: 10px 0;
-  display: flex;
-  /* flex-wrap: wrap; */
-  /* gap: 0.31em; */
-  /* justify-content: space-between; */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 20px;
-}
-
-.latest-releases__title {
-  font-weight: var(--font-bold);
-  font-size: 2.875em;
-}
-
-/* ITEM */
-
-.item {
-  background-color: #fff;
-  transition: box-shadow 0.3s ease;
-  flex: 0 0 21.875em;
-  scroll-snap-align: center;
-}
-
-.item:hover {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-}
-
-.item__image {
-  width: 21.875em;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.item__image img {
-  width: 100%;
-}
-
-.item__button {
-  display: block;
-  width: 6.25em;
-  height: 1.87em;
-  background-color: var(--red1);
-  color: var(--white);
-  font-weight: var(--font-medium);
-  font-size: 0.875em;
-  line-height: 1.87em;
-  text-align: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  position: absolute;
-  right: 0;
-}
-
-/* .item__button:hover {
-  background-color: var(--black);
-  color: var(--white);
-} */
-
-.item__info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.81em;
-  padding: 0.625em;
-}
-
-.item__seaga {
-  font-weight: var(--font-medium);
-  font-size: 0.875em;
-}
-
-.item__name {
-  font-weight: var(--font-bold);
-  font-size: 1.125em;
-}
-
-.item__price {
-  font-weight: var(--font-regular);
-  font-size: 1em;
-  color: var(--gray1);
-}
-.item__amount-fees {
-  font-weight: var(--font-bold);
-  font-size: 0.75em;
-  color: var(--blue1);
-}
-
-/* Footer */
-
-.footer {
-  width: 100%;
-  height: 21.25em;
-  background-color: var(--primary-color);
-  margin-top: 4.25em;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__content {
-  max-width: 76.25em;
-  width: 90%;
-  margin: 0 auto;
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-menu__items {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-}
-
-.footer-menu__link {
-  font-weight: var(--font-medium);
-  font-size: 1.25em;
-  color: var(--white);
-  padding: 0.31em;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  cursor: default;
-}
-
-.footer-menu__link:hover {
-  color: var(--primary-color);
-  background-color: var(--white);
-}
-
-.footer__image {
-  height: 7.5em;
-  overflow: hidden;
-}
-
-.footer__image img {
-  width: 100%;
-}
-
-.footer__copyright {
-  font-weight: var(--font-medium);
-  font-size: 1.25em;
-  color: var(--white);
-  text-align: center;
-  padding: 1em 0;
-}
-
-/* SHOP */
-/* Utilities */
-.utilities {
-  width: 240px;
-}
-
-.form {
-  background-color: var(--primary-color);
-  color: var(--white);
-  /* width: 25rem; */
-  border-end-end-radius: 8px;
-  padding: 0.5em;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-}
-
-.form__title {
-  font-weight: --font-medium;
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-
-/* Inputs tipo text,number,email,password */
-.input__container {
-  position: relative;
-  height: 2.8em;
-  width: 90%;
-  margin-bottom: 1.1em;
-}
-
-.input-price__container {
-  height: 2.8em;
-  width: 90%;
-  display: flex;
-  gap: 5px;
-}
-
-.input__container input {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border: 1px solid var(--gray0);
-  color: var(--white);
-  border-radius: 7px;
-  font-size: 1em;
-  padding: 0 1.25em;
-  outline: none;
-  background: none;
-  z-index: 1;
-}
-
-::placeholder {
-  color: transparent;
-}
-
-.input__container input:focus + label {
-  top: -7px;
-  left: 3px;
-  z-index: 10;
-  font-size: 0.9em;
-  font-weight: var(--bold);
-  color: var(--gray0);
-}
-
-.input__container input:not(:placeholder-shown) + label {
-  top: -7px;
-  left: 3px;
-  z-index: 10;
-  font-size: 0.9em;
-  font-weight: var(--bold);
-}
-
-.input__container input:focus {
-  border: 2px solid var(--gray0);
-}
-
-.input__container label {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  padding: 0 4px;
-  background-color: var(--primary-color);
-  color: var(--gray0);
-  font-size: 16px;
-  transition: 0.5s;
-  z-index: 0;
-}
-
-/* Inputs radio buttons y checkbox */
-.form input[type="radio"],
-.form input[type="checkbox"] {
-  display: none;
-}
-
-.form .radiobutton__container label,
-.form .checkbox__container label {
-  color: var(--gray0);
-  padding: 5px 15px 5px 47px;
-  display: inline-block;
-  position: relative;
-  font-size: 1em;
-  margin-bottom: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.form .radiobutton__container label:before,
-.form .checkbox__container label:before {
-  content: "";
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  background-color: none;
-  border: 3px solid var(--gray0);
-  border-radius: 100%;
-  position: absolute;
-  left: 15px;
-  top: 4px;
-}
-
-.form .checkbox__container label:before {
-  border-radius: 3px;
-}
-
-.form input[type="radio"]:checked + label,
-.form input[type="checkbox"]:checked + label {
-  padding: 5px 15px;
-  background-color: var(--gray0);
-  border-radius: 2px;
-  color: white;
-}
-
-.form input[type="radio"]:checked + label:before,
-.form input[type="checkbox"]:checked + label:before {
-  display: none;
-}
-
-/* Styling button submit */
-
-.form__submit {
-  display: block;
-  margin-left: auto;
-  padding: 15px 30px;
-  border: none;
-  background-color: var(--gray0);
-  color: var(--white);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  margin-top: 1.9em;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.form__submit:hover {
-  background-color: var(--gray1);
-  transform: translateY(-2px);
 }

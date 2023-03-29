@@ -17,48 +17,59 @@
     />
     <!-- Estilos -->
     <link rel="stylesheet" href="front/css/styles.css" />
+    <link rel="stylesheet" href="front/css/nav.css" />
   </head>
   <body>
     <header class="header">
-      <picture class="logo">
-        <img
-          src="front/img/branding/logo_light_horizontal.svg"
-          alt="FunkoShop logo"
-          class="logo__image"
-        />
-      </picture>
-      <nav class="menu text--upper">
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a href="front/shop/shop.html" class="menu__link">Shop</a>
+      <nav class="nav text--upper" id="nav">
+        <picture class="nav__logo">
+          <img
+            src="front/img/branding/logo_light_horizontal.svg"
+            alt="FunkoShop logo"
+          />
+        </picture>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="front/shop/shop.html" class="nav__link">Shop</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Contacto</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacto</a>
           </li>
-          <li class="menu__item">
-            <a href="front/admin/login.html" class="menu__link">Login</a>
+          <li class="nav__item">
+            <a href="front/admin/login.html" class="nav__link">Login</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link"><i class="bi bi-cart"></i></a>
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="bi bi-cart"></i></a>
           </li>
         </ul>
+        <a href="#nav" class="nav__toggle">
+          <img
+            src="./front/img/icons/hamburger-icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+        <a href="#" class="nav__close">
+          <img
+            src="./front/img/icons/close_icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
       </nav>
     </header>
+    <!-- Hero -->
+    <section class="hero">
+      <!-- <figure class="hero__image">
+        <img src="front/img/funkos-banner.webp" alt="FunkoShop Banner" />
+      </figure> -->
+      <div class="hero__content">
+        <h2 class="hero__title text--upper">Nuevos Ingresos</h2>
+        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
+        <a href="front/shop/shop.html" class="hero__button text--upper">shop</a>
+      </div>
+    </section>
     <main class="main">
-      <section class="hero">
-        <!-- <figure class="hero__image">
-          <img src="front/img/funkos-banner.webp" alt="FunkoShop Banner" />
-        </figure> -->
-        <div class="hero__content">
-          <h2 class="hero__title text--upper">Nuevos Ingresos</h2>
-          <p class="hero__text">
-            Descubrí el próximo Funko Pop de tu colección.
-          </p>
-          <a href="front/shop/shop.html" class="hero__button text--upper"
-            >shop</a
-          >
-        </div>
-      </section>
       <section class="collections">
         <!-- Articulo 1 -->
         <article class="card-collection">
@@ -137,179 +148,178 @@
           </figure>
         </article>
       </section>
-      <section class="latest-releases text--upper">
-        <h2 class="latest-releases__title">Ultimos lanzamientos</h2>
-        <div class="latest-releases__items">
-          <!-- Item 1 -->
-          <article class="item">
-            <a href="front/shop/items/stormtrooper_lightsaber.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/star_wars/trooper-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">star wars</h4>
-                <h3 class="item__name">stromtrooper lightsaber</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 2-->
-          <article class="item">
-            <a href="front/shop/items/pidgeotto.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/pokemon/pidgeotto-1.webp"
-                  alt="Pidgeotto image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">pokemón</h4>
-                <h3 class="item__name">pigeotto</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 3 -->
-          <article class="item">
-            <a href="front/shop/items/luna_lovegood_lion_mask.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/harry_potter/luna-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">harry potter</h4>
-                <h3 class="item__name">luna lovegood lion mask</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 1 -->
-          <article class="item">
-            <a href="front/shop/items/stormtrooper_lightsaber.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/star_wars/trooper-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">star wars</h4>
-                <h3 class="item__name">stromtrooper lightsaber</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 2-->
-          <article class="item">
-            <a href="front/shop/items/pidgeotto.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/pokemon/pidgeotto-1.webp"
-                  alt="Pidgeotto image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">pokemón</h4>
-                <h3 class="item__name">pigeotto</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 3 -->
-          <article class="item">
-            <a href="front/shop/items/luna_lovegood_lion_mask.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/harry_potter/luna-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">harry potter</h4>
-                <h3 class="item__name">luna lovegood lion mask</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 1 -->
-          <article class="item">
-            <a href="front/shop/items/stormtrooper_lightsaber.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/star_wars/trooper-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">star wars</h4>
-                <h3 class="item__name">stromtrooper lightsaber</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 2-->
-          <article class="item">
-            <a href="front/shop/items/pidgeotto.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/pokemon/pidgeotto-1.webp"
-                  alt="Pidgeotto image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">pokemón</h4>
-                <h3 class="item__name">pigeotto</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-          <!-- Item 3 -->
-          <article class="item">
-            <a href="front/shop/items/luna_lovegood_lion_mask.html">
-              <figure class="item__image">
-                <div class="item__button">nuevo</div>
-                <img
-                  src="front/shop/items/img/harry_potter/luna-1.webp"
-                  alt="Trooper image"
-                />
-              </figure>
-              <div class="item__info">
-                <h4 class="item__saga">harry potter</h4>
-                <h3 class="item__name">luna lovegood lion mask</h3>
-                <div class="item__price">$ 1799,99-</div>
-                <div class="item__amount-fees">3 cuotas sin interés</div>
-              </div>
-            </a>
-          </article>
-        </div>
-      </section>
     </main>
-
+    <section class="latest-releases text--upper">
+      <h2 class="latest-releases__title">Ultimos lanzamientos</h2>
+      <div class="latest-releases__items">
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="front/shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <article class="item">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="front/shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <article class="item">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="front/shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <article class="item">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="front/shop/items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer__content">
         <nav class="footer__menu text--upper">
-          <ul class="footer-menu__items">
+          <ul class="footer-nav__items">
             <li class="footer-menu__item">
               <a href="/front/shop/shop.html" class="footer-menu__link">shop</a>
             </li>
