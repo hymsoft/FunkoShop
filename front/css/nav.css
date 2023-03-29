@@ -36,7 +36,7 @@
 
 .nav__logo {
   display: inline-block;
-  height: 30px;
+  height: 3rem;
   overflow: hidden;
 }
 
@@ -100,10 +100,15 @@
   .nav {
     --state-toggle: scale(0);
     --state-menu: translate(0);
+    height: 14.4rem;
   }
 
   .nav:target {
     --state-close: scale(0);
+  }
+
+  .nav__logo {
+    height: 6.5rem;
   }
 
   .nav__links {

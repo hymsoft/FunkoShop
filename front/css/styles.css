@@ -69,6 +69,11 @@ body {
   font-family: var(--alternative-font);
 }
 
+section {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .text--upper {
   text-transform: uppercase;
 }
