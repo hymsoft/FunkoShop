@@ -19,6 +19,7 @@
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
   --light-font-solid: #ffffff;
+  --dark-item-text: #333333;
 
   /* Typography */
   --base-font: "Inter", sans-serif;
@@ -28,7 +29,7 @@
   --thin: 100;
   --light: 300;
   --regular: 400;
-  --mediu: 500;
+  --medium: 500;
   --semibold: 600;
   --bold: 700;
   --black: 900;
