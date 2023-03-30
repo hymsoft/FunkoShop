@@ -10,7 +10,7 @@
 }
 
 .footer__content {
-  max-width: 850px;
+  max-width: var(--mw);
   width: 90%;
   margin: 0 auto;
   flex: 1;
