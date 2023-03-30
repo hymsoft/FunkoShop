@@ -57,6 +57,9 @@
   --mw-800: 80rem;
   --mw-1000: 100rem;
   --mw-1200: 120rem;
+
+  /* Varius */
+  --nav-height-mobile: 7rem;
 }
 
 * {

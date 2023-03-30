@@ -9,6 +9,9 @@
 
 .header {
   background-color: var(--dark-bg-solid);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav {
@@ -18,7 +21,7 @@
   overflow: hidden;
   margin: 0 auto;
   /* padding: var(--spacing-12) 0; */
-  height: 7rem;
+  height: var(--nav-height-mobile);
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
@@ -69,7 +72,9 @@
 .nav__links {
   background-color: var(--dark-bg-solid);
   position: absolute;
-  top: 0;
+  height: calc(100vh - var(--nav-height-mobile));
+  z-index: 99;
+  top: var(--nav-height-mobile);
   left: 0;
   right: 0;
   bottom: 0;
@@ -112,6 +117,7 @@
   }
 
   .nav__links {
+    height: unset;
     position: unset;
     gap: 1.5em;
     transform: unset;
