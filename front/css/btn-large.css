@@ -1,0 +1,26 @@
+.btn-large {
+  display: block;
+  margin-top: var(--spacing-36);
+  height: 4.7rem;
+  line-height: 4.7rem;
+  max-width: 13.18em;
+  background-color: var(--light-bg-solid);
+  color: var(--dark-solid);
+  border-radius: 3rem;
+  font-weight: var(--medium);
+  font-size: var(--font-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-large:hover {
+  background-color: var(--dark-bg-solid);
+  color: var(--light-bg-solid);
+}
+
+@media (min-width: 768px) {
+  .btn-large {
+    margin-top: var(--spacing-68);
+  }
+}
