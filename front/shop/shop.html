@@ -17,92 +17,58 @@
     />
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/item.css" />
+    <link rel="stylesheet" href="./css/shop.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
-      <picture class="logo">
-        <a href="../../index.html">
-          <img
-            src="../img/branding/logo_light_horizontal.svg"
-            alt="FunkoShop logo"
-            class="logo__image"
-          />
-        </a>
-      </picture>
-      <nav class="menu text--upper">
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a href="../shop/shop.html" class="menu__link">Shop</a>
+      <nav class="nav text--upper" id="nav">
+        <picture class="nav__logo">
+          <a href="./../../index.html">
+            <img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt="FunkoShop logo"
+            />
+          </a>
+        </picture>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="./shop.html" class="nav__link">Shop</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Contacto</a>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacto</a>
           </li>
-          <li class="menu__item">
-            <a href="../admin/login.html" class="menu__link">Login</a>
+          <li class="nav__item">
+            <a href="./../admin/login.html" class="nav__link">Login</a>
           </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link"><i class="bi bi-cart"></i></a>
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="bi bi-cart"></i></a>
           </li>
         </ul>
+        <a href="#nav" class="nav__toggle">
+          <img
+            src="./../img/icons/hamburger-icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+        <a href="#" class="nav__close">
+          <img src="./../img/icons/close_icon.svg" alt="" class="nav__icon" />
+        </a>
       </nav>
     </header>
-
-    <div class="main__container">
-      <aside class="utilities">
-        <form action="" class="form">
-          <h2 class="form__title">Buscar</h2>
-          <div class="input__container">
-            <input type="text" placeholder="a" id="item" />
-            <label for="item">Item o categoría</label>
-          </div>
-
-          <h2 class="form__title">Precio</h2>
-          <div class="input-price__container">
-            <div class="input__container">
-              <input type="number" placeholder="a" id="minimo" />
-              <label for="minimo">Mínimo</label>
-            </div>
-            <div class="input__container">
-              <input type="number" placeholder="a" id="maximo" />
-              <label for="maximo">Máximo</label>
-            </div>
-          </div>
-
-          <h2 class="form__title">Ordenar por</h2>
-          <div class="radiobutton__container">
-            <input type="radio" name="ordenarpor" id="menor" />
-            <label for="menor">Menor</label>
-
-            <input type="radio" name="ordenarpor" id="mayor" />
-            <label for="mayor">Mayor</label>
-          </div>
-
-          <h2 class="form__title">Filtrar por</h2>
-          <div class="checkbox__container">
-            <input type="checkbox" name="nuevo" id="nuevo" />
-            <label for="nuevo">Nuevo</label><br />
-            <input type="checkbox" name="ofertas" id="ofertas" />
-            <label for="ofertas">Ofertas</label><br />
-            <input
-              type="checkbox"
-              name="edicionespecial"
-              id="edicionespecial"
-            />
-            <label for="edicionespecial">Edicion Especial</label><br />
-            <input type="checkbox" name="favoritos" id="favoritos" />
-            <label for="favoritos">favoritos</label><br />
-          </div>
-          <!--     <input type="submit" class="form__submit" value="Sign up"> -->
-        </form>
-      </aside>
-      <main class="shop text--upper">
+    <main class="main-shop">
+      <section class="item-gallery text--upper">
         <!-- Item 1 -->
         <article class="item">
-          <a href="../shop/items/stormtrooper_lightsaber.html">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/star_wars/trooper-1.webp"
+                src="./items/img/star_wars/trooper-1.webp"
                 alt="Trooper image"
               />
             </figure>
@@ -116,11 +82,11 @@
         </article>
         <!-- Item 2-->
         <article class="item">
-          <a href="../shop/items/pidgeotto.html">
+          <a href="front/shop/items/pidgeotto.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/pokemon/pidgeotto-1.webp"
+                src="./items/img/pokemon/pidgeotto-1.webp"
                 alt="Pidgeotto image"
               />
             </figure>
@@ -134,11 +100,11 @@
         </article>
         <!-- Item 3 -->
         <article class="item">
-          <a href="../shop/items/luna_lovegood_lion_mask.html">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/harry_potter/luna-1.webp"
+                src="./items/img/harry_potter/luna-1.webp"
                 alt="Trooper image"
               />
             </figure>
@@ -152,11 +118,11 @@
         </article>
         <!-- Item 1 -->
         <article class="item">
-          <a href="../shop/items/stormtrooper_lightsaber.html">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/star_wars/trooper-1.webp"
+                src="./items/img/star_wars/trooper-1.webp"
                 alt="Trooper image"
               />
             </figure>
@@ -170,11 +136,11 @@
         </article>
         <!-- Item 2-->
         <article class="item">
-          <a href="../shop/items/pidgeotto.html">
+          <a href="front/shop/items/pidgeotto.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/pokemon/pidgeotto-1.webp"
+                src="./items/img/pokemon/pidgeotto-1.webp"
                 alt="Pidgeotto image"
               />
             </figure>
@@ -188,11 +154,11 @@
         </article>
         <!-- Item 3 -->
         <article class="item">
-          <a href="../shop/items/luna_lovegood_lion_mask.html">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
             <figure class="item__image">
               <div class="item__button">nuevo</div>
               <img
-                src="../shop/items/img/harry_potter/luna-1.webp"
+                src="./items/img/harry_potter/luna-1.webp"
                 alt="Trooper image"
               />
             </figure>
@@ -204,14 +170,69 @@
             </div>
           </a>
         </article>
-      </main>
-    </div>
+        <!-- Item 1 -->
+        <article class="item">
+          <a href="front/shop/items/stormtrooper_lightsaber.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="./items/img/star_wars/trooper-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">star wars</h4>
+              <h3 class="item__name">stromtrooper lightsaber</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 2-->
+        <article class="item">
+          <a href="front/shop/items/pidgeotto.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="./items/img/pokemon/pidgeotto-1.webp"
+                alt="Pidgeotto image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">pokemón</h4>
+              <h3 class="item__name">pigeotto</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article>
+        <!-- Item 3 -->
+        <!-- <article class="item">
+          <a href="front/shop/items/luna_lovegood_lion_mask.html">
+            <figure class="item__image">
+              <div class="item__button">nuevo</div>
+              <img
+                src="./items/img/harry_potter/luna-1.webp"
+                alt="Trooper image"
+              />
+            </figure>
+            <div class="item__info">
+              <h4 class="item__saga">harry potter</h4>
+              <h3 class="item__name">luna lovegood lion mask</h3>
+              <div class="item__price">$ 1799,99-</div>
+              <div class="item__amount-fees">3 cuotas sin interés</div>
+            </div>
+          </a>
+        </article> -->
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="footer__content">
         <nav class="footer__menu text--upper">
           <ul class="footer-menu__items">
             <li class="footer-menu__item">
-              <a href="../shop/shop.html" class="footer-menu__link">shop</a>
+              <a href="./shop.html" class="footer-menu__link">shop</a>
             </li>
             <li class="footer-menu__item">
               <a href="#" class="footer-menu__link">registrese</a>
@@ -225,7 +246,7 @@
           </ul>
         </nav>
         <picture class="footer__image">
-          <img src="../img/branding/isotype.svg" alt="FunkoShop logo" />
+          <img src="./../img/branding/isotype.svg" alt="FunkoShop logo" />
         </picture>
       </div>
       <div class="footer__copyright">

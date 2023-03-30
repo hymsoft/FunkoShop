@@ -5,6 +5,7 @@
   max-width: var(--mw);
   width: 90%;
   margin: var(--spacing-12) auto 0;
+  margin-bottom: var(--spacing-36);
 }
 
 .latest-releases__title {
