@@ -28,8 +28,8 @@
   width: 100%;
 }
 
-.item__button {
-  display: block;
+.item__new-message {
+  display: none;
   width: 6.25em;
   height: 1.87em;
   background-color: var(--primary-solid);
@@ -43,7 +43,11 @@
   right: 0;
 }
 
-/* .item__button:hover {
+.item__new {
+  display: block;
+}
+
+/* .item__new-message:hover {
     background-color: var(--black);
     color: var(--white);
   } */
