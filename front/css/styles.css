@@ -20,6 +20,8 @@
   --light-bg-solid: #fafaff;
   --light-font-solid: #ffffff;
   --dark-item-text: #333333;
+  --gray0: #857b7b;
+  --gray1: #4f4f4f;
 
   /* Typography */
   --base-font: "Inter", sans-serif;

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/item.css" />
     <link rel="stylesheet" href="./css/shop.css" />
+    <link rel="stylesheet" href="./css/form-search-filter-shop.css" />
   </head>
   <body>
     <!-- Header -->
@@ -61,6 +62,74 @@
       </nav>
     </header>
     <main class="main-shop">
+      <input class="btn-filter__input" type="checkbox" id="filter" />
+      <div class="btn__filter">
+        <label for="filter"
+          ><img src="../img/icons/arrow_botton_next_right_icon.svg" alt="arrow"
+        /></label>
+      </div>
+      <aside class="utilities">
+        <form action="" class="form">
+          <h2 class="form__title">Buscar</h2>
+          <div class="input__container">
+            <input type="text" placeholder="a" id="item" />
+            <label for="item">Item o categoría</label>
+          </div>
+
+          <h2 class="form__title">Precio</h2>
+          <div class="input-price__container">
+            <div class="input__container">
+              <input
+                type="number"
+                placeholder="a"
+                id="minimo"
+                min="500"
+                step="100"
+              />
+              <label for="minimo">Mínimo</label>
+            </div>
+            <div class="input__container">
+              <input
+                type="number"
+                placeholder="a"
+                id="maximo"
+                min="500"
+                step="100"
+              />
+              <label for="maximo">Máximo</label>
+            </div>
+          </div>
+
+          <h2 class="form__title">Ordenar por</h2>
+          <div class="radiobutton__container">
+            <input type="radio" name="ordenarpor" id="menor" />
+            <label for="menor">Menor</label>
+
+            <input type="radio" name="ordenarpor" id="mayor" />
+            <label for="mayor">Mayor</label>
+          </div>
+
+          <h2 class="form__title">Filtrar por</h2>
+          <div class="checkbox__container">
+            <input type="checkbox" name="nuevo" id="nuevo" />
+            <label for="nuevo">Nuevo</label><br />
+            <input type="checkbox" name="ofertas" id="ofertas" />
+            <label for="ofertas">Ofertas</label><br />
+            <input
+              type="checkbox"
+              name="edicionespecial"
+              id="edicionespecial"
+            />
+            <label for="edicionespecial">Edicion Especial</label><br />
+            <input type="checkbox" name="favoritos" id="favoritos" />
+            <label for="favoritos">favoritos</label><br />
+          </div>
+          <!--     <input type="submit" class="form__submit" value="Sign up"> -->
+        </form>
+        <label class="btn-filter__close" for="filter"
+          ><img src="../img/icons/close_icon.svg" alt=""
+        /></label>
+      </aside>
       <section class="item-gallery text--upper">
         <!-- Item 1 -->
         <article class="item">
@@ -206,24 +275,6 @@
             </div>
           </a>
         </article>
-        <!-- Item 3 -->
-        <!-- <article class="item">
-          <a href="front/shop/items/luna_lovegood_lion_mask.html">
-            <figure class="item__image">
-              <div class="item__new-message">nuevo</div>
-              <img
-                src="./items/img/harry_potter/luna-1.webp"
-                alt="Trooper image"
-              />
-            </figure>
-            <div class="item__info">
-              <h4 class="item__saga">harry potter</h4>
-              <h3 class="item__name">luna lovegood lion mask</h3>
-              <div class="item__price">$ 1799,99-</div>
-              <div class="item__amount-fees">3 cuotas sin interés</div>
-            </div>
-          </a>
-        </article> -->
       </section>
     </main>
 
