@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="front/img/branding/isotype.ico"
+      type="image/x-icon"
+    />
+    <title>FunkoShop - Tu tienda online de Funko Pop!</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./../base/css/styles.css" />
+    <link rel="stylesheet" href="./../base/css/btn-large.css" />
+    <link rel="stylesheet" href="./../base/css/nav.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./../base/css/footer.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav text--upper" id="nav">
+        <picture class="nav__logo">
+          <a href="./../../index.html">
+            <img
+              src="./../base/img/branding/logo_light_horizontal.svg"
+              alt="FunkoShop logo"
+            />
+          </a>
+        </picture>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="./../../index.html" class="nav__link">Salir</a>
+          </li>
+        </ul>
+        <a href="#nav" class="nav__toggle">
+          <img
+            src="./../base/img/icons/hamburger-icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+        <a href="#" class="nav__close">
+          <img
+            src="./../base/img/icons/close_icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-admin">
+      <section class="admin">
+        <div class="search">
+          <img
+            src="./../base/img/icons/search_icon.svg"
+            alt="Icono de lupa"
+            class="search__icon"
+          />
+          <div class="input__container">
+            <input type="text" placeholder="a" id="buscar" />
+            <label for="buscar">Código, nombe o categoría</label>
+          </div>
+        </div>
+        <article class="admin__second-line">
+          <h2 class="admin__title text--upper">listado de productos</h2>
+          <a href="#" class="product__add">Agregar</a>
+        </article>
+        <div class="table__container">
+          <!-- Tabla de articulos -->
+          <table>
+            <!-- <caption>
+                Statement Summary
+              </caption> -->
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Código</th>
+                <th scope="col">Nombre del producto</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" data-label="ID">4</td>
+                <td data-label="Código">STW001004</td>
+                <td data-label="Nombre del producto">Stormtrooper Lightsabe</td>
+                <td data-label="Categoría">STAR WARS</td>
+                <td data-label="Acciones">
+                  <a href="./edit.html">
+                    <img
+                      src="./../base/img/icons/edit_pencil.svg"
+                      alt="Edit Icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./../base/img/icons/delete_trash.svg"
+                      alt="Delete Icon"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="ID">7</td>
+                <td data-label="Código">PKM001003</td>
+                <td data-label="Nombre del producto">Pidgeotto Flying</td>
+                <td data-label="Categoría">POKEMON</td>
+                <td data-label="Acciones">
+                  <a href="./edit.html">
+                    <img
+                      src="./../base/img/icons/edit_pencil.svg"
+                      alt="Edit Icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./../base/img/icons/delete_trash.svg"
+                      alt="Delete Icon"
+                    />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="ID">12</td>
+                <td data-label="Código">HPT001003</td>
+                <td data-label="Nombre del producto">
+                  Luna Lovegood Lion Mask
+                </td>
+                <td data-label="Categoría">HARRY POTTER</td>
+                <td data-label="Acciones">
+                  <a href="./edit.html">
+                    <img
+                      src="./../base/img/icons/edit_pencil.svg"
+                      alt="Edit Icon"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="./../base/img/icons/delete_trash.svg"
+                      alt="Delete Icon"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <nav class="footer__menu text--upper">
+          <ul class="footer-menu__items">
+            <li class="footer-menu__item">
+              <a href="./../shop/shop.html" class="footer-menu__link">shop</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="./register.html" class="footer-menu__link">registrese</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="./login.html" class="footer-menu__link">ingresar</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <picture class="footer__image">
+          <img src="./../base/img/branding/isotype.svg" alt="FunkoShop logo" />
+        </picture>
+      </div>
+      <div class="footer__copyright">
+        All rights reserved 2022 - FunkoShop &copy;
+      </div>
+    </footer>
+  </body>
+</html>

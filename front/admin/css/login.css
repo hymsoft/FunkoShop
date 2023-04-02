@@ -163,6 +163,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: var(--font-small);
   transition: background-color 0.2s ease, transform 0.2s ease;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .form__submit:hover {
