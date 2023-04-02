@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="shortcut icon"
-      href="../img/branding/isotype.ico"
+      href="front/img/branding/isotype.ico"
       type="image/x-icon"
     />
     <title>FunkoShop - Tu tienda online de Funko Pop!</title>
@@ -16,60 +16,111 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <!-- Estilos -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <!-- Estilos para la plantilla -->
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        width: 100%;
-        height: 100vw;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        margin-top: 5%;
-        background-color: yellow;
-      }
-
-      .container {
-        width: 400px;
-        min-height: 120px;
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      }
-
-      .titulo {
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      button {
-        background-color: #e74c3c;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        margin: 10px auto;
-        display: block;
-      }
-
-      button a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="./../base/css/styles.css" />
+    <link rel="stylesheet" href="./../base/css/btn-large.css" />
+    <link rel="stylesheet" href="./../base/css/nav.css" />
+    <link rel="stylesheet" href="./../base/css/footer.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="titulo">login</h1>
-      <button><a href="../../index.html">Volver</a></button>
-    </div>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav text--upper" id="nav">
+        <picture class="nav__logo">
+          <a href="./../../index.html">
+            <img
+              src="./../base/img/branding/logo_light_horizontal.svg"
+              alt="FunkoShop logo"
+            />
+          </a>
+        </picture>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="./../shop/shop.html" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contacto</a>
+          </li>
+          <li class="nav__item">
+            <a href="./../admin/login.html" class="nav__link">Login</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"><i class="bi bi-cart"></i></a>
+          </li>
+        </ul>
+        <a href="#nav" class="nav__toggle">
+          <img
+            src="./../base/img/icons/hamburger-icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+        <a href="#" class="nav__close">
+          <img
+            src="./../base/img/icons/close_icon.svg"
+            alt=""
+            class="nav__icon"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-login">
+      <section class="login">
+        <h2 class="login__title text--upper">Ingresar a mi cuenta</h2>
+        <form class="form">
+          <!-- Email -->
+          <div class="input__container">
+            <input type="email" placeholder="a" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <!-- Password -->
+          <div class="input__container">
+            <input type="password" placeholder="a" id="password" />
+            <label for="password">Contraseña</label>
+          </div>
+          <!-- Igresar y recordar -->
+          <div class="form-btn__container">
+            <button type="submit" class="form__submit">Ingresar</button>
+            <div class="checkbox__container">
+              <input type="checkbox" name="recordarme" id="recordarme" />
+              <label for="recordarme">Recordarme</label><br />
+            </div>
+          </div>
+          <a href="#" class="form__forgot-password-link"
+            >Olvide mi contraseña</a
+          >
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <nav class="footer__menu text--upper">
+          <ul class="footer-menu__items">
+            <li class="footer-menu__item">
+              <a href="./../shop/shop.html" class="footer-menu__link">shop</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">registrese</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">ingresar</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="#" class="footer-menu__link">contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <picture class="footer__image">
+          <img src="./../base/img/branding/isotype.svg" alt="FunkoShop logo" />
+        </picture>
+      </div>
+      <div class="footer__copyright">
+        All rights reserved 2022 - FunkoShop &copy;
+      </div>
+    </footer>
   </body>
 </html>
