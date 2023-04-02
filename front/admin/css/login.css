@@ -40,7 +40,7 @@
   height: 100%;
   width: 100%;
   border: 1px solid var(--gray0);
-  color: var(--light-bg-solid);
+  color: var(--dark-bg-solid);
   border-radius: 7px;
   font-size: 1em;
   padding: 0 1.25em;
