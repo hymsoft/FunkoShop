@@ -80,6 +80,7 @@ html {
 
 body {
   font-family: var(--alternative-font);
+  line-height: normal;
 }
 
 section {

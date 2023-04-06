@@ -1,0 +1,90 @@
+/* Modificaciones de las clases de BS */
+.navbar {
+  background-color: #30343f;
+  /* width: 90%; */
+  margin: 0 auto;
+  height: var(--nav-height-mobile);
+  font-family: var(--alternative-font);
+  font-weight: var(--medium);
+  font-size: var(--font-medium);
+}
+
+.navbar-brand img {
+  height: 3rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus:not(:focus-visible) {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert();
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  vertical-align: middle;
+  background-image: url(./../img/icons/hamburger-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.nav-item {
+  padding: 0.5em 0;
+}
+
+.nav-link {
+  color: var(--light-bg-solid);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.nav-link:hover {
+  color: var(--secondary-solid);
+}
+
+.show {
+  position: absolute;
+  background-color: var(--dark-bg-solid);
+  top: var(--nav-height-mobile);
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  z-index: 100;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 14.4rem;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+  .navbar-brand img {
+    height: 5.5rem;
+  }
+
+  .nav-icon {
+    line-height: 20px;
+  }
+
+  .nav-link {
+    color: var(--light-bg-solid);
+    letter-spacing: 2px;
+    letter-spacing: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--dark-bg-solid);
+    background-color: var(--light-bg-solid);
+  }
+}
