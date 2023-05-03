@@ -1,3 +1,9 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 .main-nav {
   display: grid;
   grid-template-rows: minmax(min-content, 60px);
@@ -97,7 +103,7 @@
 @media (min-width: 768px) {
   .main-nav,
   .main-nav__content {
-    height: 14.4rem;
+    height: var(--nav-height-desktop);
   }
 
   .main-nav__brand img {

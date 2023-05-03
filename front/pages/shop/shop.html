@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FunkoShop - Tu tienda online de Funko Pop!</title>
+    <title>FunkoShop - Shop</title>
     <link
       rel="shortcut icon"
-      href="./front/img/branding/isotype.ico"
+      href="../../img/branding/isotype.ico"
       type="image/x-icon"
     />
     <!-- Bootstrap -->
@@ -25,28 +25,23 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
     />
     <!-- Estilos -->
-    <link rel="stylesheet" href="./front/css/funkos.css" />
-    <link rel="stylesheet" href="./front/component/btn-large/btn-large.css" />
-    <link rel="stylesheet" href="./front/component/menu/menu.css" />
-    <link rel="stylesheet" href="./front/component/hero/hero.css" />
+    <link rel="stylesheet" href="../../css/funkos.css" />
+    <link rel="stylesheet" href="../../component/menu/menu.css" />
+    <link rel="stylesheet" href="./shop.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="main-header">
       <div class="main-nav">
         <div class="main-nav__content">
-          <a href="./index.html" class="main-nav__brand">
+          <a href="../../../index.html" class="main-nav__brand">
             <img
-              src="./front/img/branding/logo_light_horizontal.svg"
+              src="../../img/branding/logo_light_horizontal.svg"
               alt="Logo FunkoShop"
             />
           </a>
           <ul class="main-nav__items">
-            <li>
-              <a class="main-nav__link" href="./front/pages/shop/shop.html"
-                >Shop</a
-              >
-            </li>
+            <li><a class="main-nav__link" href="./shop.html">Shop</a></li>
             <li><a class="main-nav__link" href="#">Contacto</a></li>
             <li><a class="main-nav__link" href="#">Login</a></li>
             <li>
@@ -59,11 +54,7 @@
         </div>
         <ul class="main-nav__dropdown" id="main-nav__dropdown">
           <li class="main-nav-dropdown__item">
-            <a
-              class="main-nav-dropdown__link"
-              href="./front/pages/shop/shop.html"
-              >Shop</a
-            >
+            <a class="main-nav-dropdown__link" href="./shop.html">Shop</a>
           </li>
           <li class="main-nav-dropdown__item">
             <a class="main-nav-dropdown__link" href="#">Contacto</a>
@@ -80,18 +71,7 @@
       </div>
     </header>
     <div class="margin-menu"></div>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero__content">
-        <h2 class="hero__title text--upper">Nuevos Ingresos</h2>
-        <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
-        <a
-          href="./front/pages/shop/shop.html"
-          class="btn-large hero__button text--upper"
-          >shop</a
-        >
-      </div>
-    </section>
-    <script src="./front/component/menu/menu.js"></script>
+    <h1>Shop</h1>
+    <script src="../../component/menu/menu.js"></script>
   </body>
 </html>

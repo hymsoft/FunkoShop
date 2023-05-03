@@ -92,3 +92,15 @@ section {
 .text--upper {
   text-transform: uppercase;
 }
+
+.margin-menu {
+  position: relative;
+  width: 100%;
+  height: var(--nav-height-mobile);
+}
+
+@media (min-width: 768px) {
+  .margin-menu {
+    height: var(--nav-height-desktop);
+  }
+}
