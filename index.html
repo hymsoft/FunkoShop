@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FunkoShop - Tu tienda online de Funko Pop!</title>
+    <link
+      rel="shortcut icon"
+      href="/front/img/branding/isotype.ico"
+      type="image/x-icon"
+    />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -14,7 +19,55 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <!-- Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    />
     <!-- Estilos -->
+    <link rel="stylesheet" href="/front/css/funkos.css" />
+    <link rel="stylesheet" href="/front/component/menu/menu.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="main-header">
+      <div class="main-nav">
+        <div class="main-nav__content">
+          <a href="/index.html" class="main-nav__brand">
+            <img
+              src="/front/img/branding/logo_light_horizontal.svg"
+              alt="Logo FunkoShop"
+            />
+          </a>
+          <ul class="main-nav__items">
+            <li><a class="main-nav__link" href="#">Shop</a></li>
+            <li><a class="main-nav__link" href="#">Contacto</a></li>
+            <li><a class="main-nav__link" href="#">Login</a></li>
+            <li>
+              <a class="main-nav__link" href="#"
+                ><i class="material-icons">shopping_cart</i></a
+              >
+            </li>
+          </ul>
+          <i id="main-menu" class="material-icons main-nav__btn">menu</i>
+        </div>
+        <ul class="main-nav__dropdown" id="main-nav__dropdown">
+          <li class="main-nav-dropdown__item">
+            <a class="main-nav-dropdown__link" href="#">Shop</a>
+          </li>
+          <li class="main-nav-dropdown__item">
+            <a class="main-nav-dropdown__link" href="#">Contacto</a>
+          </li>
+          <li class="main-nav-dropdown__item">
+            <a class="main-nav-dropdown__link" href="#">Login</a>
+          </li>
+          <li class="main-nav-dropdown__item">
+            <a class="main-nav-dropdown__link" href="#"
+              ><i class="material-icons">shopping_cart</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <script src="/front/component/menu/menu.js"></script>
+  </body>
 </html>
