@@ -1,97 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FunkoShop - Tu tienda online de Funko Pop!</title>
-    <link
-      rel="shortcut icon"
-      href="./front/img/branding/isotype.ico"
-      type="image/x-icon"
-    />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <!-- Material Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
-    />
-    <!-- Estilos -->
-    <link rel="stylesheet" href="./front/css/funkos.css" />
-    <link rel="stylesheet" href="./front/component/btn-large/btn-large.css" />
-    <link rel="stylesheet" href="./front/component/menu/menu.css" />
-    <link rel="stylesheet" href="./front/component/hero/hero.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="main-header">
-      <div class="main-nav">
-        <div class="main-nav__content">
-          <a href="./index.html" class="main-nav__brand">
-            <img
-              src="./front/img/branding/logo_light_horizontal.svg"
-              alt="Logo FunkoShop"
-            />
-          </a>
-          <ul class="main-nav__items">
-            <li>
-              <a class="main-nav__link" href="./front/pages/shop/shop.html"
-                >Shop</a
-              >
-            </li>
-            <li><a class="main-nav__link" href="#">Contacto</a></li>
-            <li><a class="main-nav__link" href="#">Login</a></li>
-            <li>
-              <a class="main-nav__link" href="#"
-                ><i class="material-icons">shopping_cart</i></a
-              >
-            </li>
-          </ul>
-          <i id="main-menu" class="material-icons main-nav__btn">menu</i>
-        </div>
-        <ul class="main-nav__dropdown" id="main-nav__dropdown">
-          <li class="main-nav-dropdown__item">
-            <a
-              class="main-nav-dropdown__link"
-              href="./front/pages/shop/shop.html"
-              >Shop</a
-            >
-          </li>
-          <li class="main-nav-dropdown__item">
-            <a class="main-nav-dropdown__link" href="#">Contacto</a>
-          </li>
-          <li class="main-nav-dropdown__item">
-            <a class="main-nav-dropdown__link" href="#">Login</a>
-          </li>
-          <li class="main-nav-dropdown__item">
-            <a class="main-nav-dropdown__link" href="#"
-              ><i class="material-icons">shopping_cart</i></a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="margin-menu"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FunkoShop - Tu tienda online de Funko Pop!</title>
+  <link rel="shortcut icon" href="/front/img/branding/isotype.ico" type="image/x-icon" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- Material Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/front/css/funkos.css" />
+  <link rel="stylesheet" href="/front/component/btn-large/btn-large.css" />
+  <link rel="stylesheet" href="/front/component/hero/hero.css" />
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header class="main-header">
+    <script src="/front/component/menu/menu.js" type="module"></script>
+  </header>
+  <div class="margin-menu"></div>
+  <div class="contenedor">
     <!-- Hero -->
     <section class="hero">
       <div class="hero__content">
         <h2 class="hero__title text--upper">Nuevos Ingresos</h2>
         <p class="hero__text">Descubrí el próximo Funko Pop de tu colección.</p>
-        <a
-          href="./front/pages/shop/shop.html"
-          class="btn-large hero__button text--upper"
-          >shop</a
-        >
+        <a href="/front/pages/shop/shop.html" class="btn-large hero__button text--upper">shop</a>
       </div>
     </section>
-    <script src="./front/component/menu/menu.js"></script>
-  </body>
+    <!-- Main -->
+    <main class="main">
+      <section class="collections">
+      </section>
+      <!-- Genero las tarjetas grandes -->
+      <script src="/front/component/big-card/bigCard.js" type="module"></script>
+    </main>
+    <!-- Ultimos lanzamientos -->
+    <section class="latest-releases text--upper">
+      <h2 class="latest-releases__title">Ultimos lanzamientos</h2>
+      <div class="slider">
+        <script src="/front/component/slider/slider.js" type="module"></script>
+      </div>
+    </section>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <script src="/front/component/footer/footer.js" type="module"></script>
+  </footer>
+</body>
+
 </html>

@@ -1,0 +1,180 @@
+.main {
+  width: 90%;
+  font-size: 1.8rem;
+  margin: 1rem auto;
+}
+
+.main-item {
+  width: 100%;
+  font-size: 0.6rem;
+}
+
+.card-item-landscape {
+  width: 100%;
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--light-bg-solid);
+  font-family: var(--alternative-font);
+  border-radius: 2em;
+}
+
+.card-item-landscape__content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-8);
+}
+
+.card-item-lanscape__franchise {
+  font-weight: var(--medium);
+  font-size: var(--font-large);
+  margin-bottom: var(--spacing-8);
+}
+
+.card-item-landscape__title {
+  font-weight: var(--bold);
+  font-size: var(--font-jumbo);
+  margin-bottom: var(--spacing-12);
+}
+
+.card-item-landscape__description {
+  font-weight: var(--regular);
+  font-size: var(--font-large);
+  margin-bottom: var(--spacing-16);
+}
+
+.card-item-landscape__price {
+  font-weight: var(--regular);
+  font-size: var(--font-jumbo);
+  margin-bottom: var(--spacing-28);
+}
+
+.card-item-landscape__amount {
+  height: 4rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: var(--spacing-28);
+}
+
+.amount__count {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.amount__btn-subtract,
+.amount__btn-add {
+  background-color: var(--gray1);
+  width: 4rem;
+  height: 4rem;
+  font-size: var(--font-display);
+  color: var(--light-bg-solid);
+  border: none;
+}
+
+#amount__input {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.add-to-cart {
+  background-color: var(--primary-solid);
+  flex: 1;
+  font-weight: var(--regular);
+  font-size: var(--font-large);
+  color: var(--light-bg-solid);
+  border: none;
+}
+
+.payment-methods__view,
+.payment-methods,
+.payment-methods__selected {
+  font-weight: var(--bold);
+  font-size: var(--font-small);
+  color: var(--secondary-solid);
+  text-align: center;
+}
+
+.card-item-landscape__image {
+  /* width: 80%; */
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.card-item-landscape__image img {
+  max-height: 35rem;
+}
+
+/* .card-item-landscape__image img:hover {
+} */
+
+@media (min-width: 768px) {
+  .main-item {
+    font-size: 1rem;
+  }
+
+  .card-item-landscape {
+    flex-direction: row;
+    align-items: center;
+    max-width: var(--mw-1000);
+    margin: 0 auto;
+  }
+
+  .card-item-landscape__content {
+    max-width: 50em;
+  }
+
+  .card-item-lanscape__franchise {
+    font-size: var(--font-small);
+    margin-bottom: var(--spacing-12);
+  }
+
+  .card-item-landscape__title {
+    margin-bottom: var(--spacing-16);
+  }
+
+  .amount__btn-subtract,
+  .amount__btn-add {
+    background-color: var(--gray1);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: var(--font-display);
+    color: var(--light-bg-solid);
+    border: none;
+  }
+
+  .add-to-cart {
+    font-size: var(--font-medium);
+  }
+
+  .payment-methods__view,
+  .payment-methods,
+  .payment-methods__selected {
+    font-weight: var(--bold);
+    font-size: var(--font-small);
+    color: var(--secondary-solid);
+  }
+
+  .card-item-landscape__amount,
+  .payment-methods {
+    width: 65%;
+  }
+
+  .payment-methods {
+    font-size: var(--font-xxsmall);
+  }
+
+  .card-item-landscape:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card-item-landscape__button {
+    margin: 0;
+  }
+
+  .card-item-landscape__image img {
+    max-height: 45rem;
+  }
+}

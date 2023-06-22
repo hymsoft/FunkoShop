@@ -74,7 +74,7 @@
 
 html {
   scroll-behavior: smooth;
-  user-select: none;
+  /* user-select: none; */
   font-size: 62.5%;
   font-family: var(--base-font);
 }
@@ -82,6 +82,9 @@ html {
 body {
   font-family: var(--alternative-font);
   line-height: normal;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 section {

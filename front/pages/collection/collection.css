@@ -1,0 +1,15 @@
+.main {
+  width: 90%;
+  font-size: 1.8rem;
+  margin: 1rem auto;
+}
+
+h1 {
+  font-size: var(--font-xlarge);
+  font-weight: var(--bold);
+  text-align: center;
+}
+
+p {
+  font-size: var(--font-small);
+}
