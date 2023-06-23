@@ -13,7 +13,7 @@
       rgba(0, 0, 0, var(--opacidad-negro)),
       rgba(0, 0, 0, var(--opacidad-negro))
     ),
-    url(./front/img/funkos-banner.webp);
+    url(/front/img/funkos-banner.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

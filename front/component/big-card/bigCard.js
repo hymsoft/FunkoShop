@@ -1,5 +1,5 @@
 import funkoData from "/back/data/funkoData.js";
-import tools from "./front/js/tools.js";
+import tools from "/front/js/tools.js";
 
 const collectionsCount = funkoData.getCollectionCount();
 const collectionsIndex = tools.generateArrayRandomNumbers(
@@ -41,7 +41,7 @@ for (let index = 0; index < collectionsIndex.length; index++) {
         <button class="btn-large card-collection__button text--upper">ver coleccion</button>
       </div>
       <figure class="card-collection__image">
-        <img src="./front/img/shop/${currentCollection.imgPath}/${currentCollection.img}" alt="${currentCollection.nameFunkoImg} image"/>
+        <img src="/front/img/shop/${currentCollection.imgPath}/${currentCollection.img}" alt="${currentCollection.nameFunkoImg} image"/>
       </figure>
     </article>
   `;
@@ -62,7 +62,7 @@ botones.forEach((boton, index) => {
     const collectionID = currentCollection.id;
 
     // Genero la URL con los datos de la colección
-    const url = `./front/pages/collection/collection.html?id=${encodeURIComponent(
+    const url = `/front/pages/collection/collection.html?id=${encodeURIComponent(
       collectionID
     )}`;
 
@@ -71,4 +71,4 @@ botones.forEach((boton, index) => {
   });
 });
 
-// <a href="./front/pages/collection/star_wars/star_wars_collection.html" class="btn-large card-collection__button text--upper">ver coleccion</a>
+// <a href="/front/pages/collection/star_wars/star_wars_collection.html" class="btn-large card-collection__button text--upper">ver coleccion</a>

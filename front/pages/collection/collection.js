@@ -1,5 +1,5 @@
 import funkoData from "/back/data/funkoData.js";
-import tools from "./front/js/tools.js";
+import tools from "/front/js/tools.js";
 
 // Obtengo los parámetros de la URL
 const params = new URLSearchParams(window.location.search);
@@ -14,7 +14,7 @@ const newTitle = `FunkoShop - ${tools.capitalizeFirstLetters(
 // Cambio el título de la página
 document.title = newTitle;
 // Agrego el CSS
-tools.loadCSS("./front/pages/collection/collection.css");
+tools.loadCSS("/front/pages/collection/collection.css");
 
 const collectionsCardsContainer = document.querySelector(".main");
 const collectionsCardsHTML = `<h1 id="collection-name" class="text--upper">${currentCollection.name}</h1>

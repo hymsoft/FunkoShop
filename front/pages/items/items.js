@@ -1,5 +1,5 @@
 import funkoData from "/back/data/funkoData.js";
-import tools from "./front/js/tools.js";
+import tools from "/front/js/tools.js";
 
 // Obtengo los parámetros de la URL
 const params = new URLSearchParams(window.location.search);
@@ -15,7 +15,7 @@ const newTitle = `FunkoShop - ${currentFunko.name}`;
 document.title = newTitle;
 
 // Cargo el CSS
-tools.loadCSS("./front/pages/items/items.css");
+tools.loadCSS("/front/pages/items/items.css");
 // Obtengo una referencia a la sección donde insertar el contenido
 const mainItem = document.querySelector(".main-item");
 let contenidoHTML = `<article class="card-item-landscape">
@@ -43,7 +43,7 @@ let contenidoHTML = `<article class="card-item-landscape">
   </div>
   <figure class="card-item-landscape__image">
     <img
-      src="./front/img/shop/${currentFunko.imgPath}/${currentFunko.img1}"
+      src="/front/img/shop/${currentFunko.imgPath}/${currentFunko.img1}"
       alt="${tools.capitalizeFirstLetters(currentFunko.name)} Image"
     />
   </figure>

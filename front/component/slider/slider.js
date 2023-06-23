@@ -1,12 +1,12 @@
 import funkoData from "/back/data/funkoData.js";
-import tools from "./front/js/tools.js";
+import tools from "/front/js/tools.js";
 
 const funkosCount = funkoData.getFunkosCount();
 const funkosIndex = tools.generateRandomNumbers(1, funkosCount, 7);
 
 // Cargo el CSS
-tools.loadCSS("./front/component/slider/slider.css");
-tools.loadCSS("./front/component/item/item.css");
+tools.loadCSS("/front/component/slider/slider.css");
+tools.loadCSS("/front/component/item/item.css");
 // Obtengo una referencia a la sección donde insertar el contenido
 const section = document.querySelector(".slider");
 let contenidoHTML = "<ul>";
@@ -22,7 +22,7 @@ funkosIndex.forEach((currentIndex) => {
             ? '<div class="item__new-message item__new">nuevo</div>'
             : ""
         }
-        <img src="./front/img/shop/${currentFunko.imgPath}/${
+        <img src="/front/img/shop/${currentFunko.imgPath}/${
     currentFunko.img1
   }" alt="${tools.capitalizeFirstLetters(currentFunko.name)} Image" />
       </figure>
@@ -46,6 +46,6 @@ const links = document.querySelectorAll(".item");
 links.forEach((link) => {
   link.addEventListener("click", () => {
     const id = link.getAttribute("data-id");
-    window.location.href = `./front/pages/items/items.html?id=${id}`;
+    window.location.href = `/front/pages/items/items.html?id=${id}`;
   });
 });

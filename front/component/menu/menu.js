@@ -1,22 +1,22 @@
-import tools from "./front/js/tools.js";
+import tools from "/front/js/tools.js";
 
 /**
  * FunkoShop Main Menu
  * Menu principal proyecto curso Codo a Codo 2023
  */
 // Cargo el CSS
-tools.loadCSS("./front/component/menu/menu.css");
+tools.loadCSS("/front/component/menu/menu.css");
 
 // Obtengo una referencia a la sección donde insertar el contenido
 let mainHeader = document.querySelector(".main-header");
 let mainMenuContent = `<div class="main-nav">
       <div class="main-nav__content">
         <a href="/index.html" class="main-nav__brand">
-          <img src="./front/img/branding/logo_light_horizontal.svg" alt="Logo FunkoShop" />
+          <img src="/front/img/branding/logo_light_horizontal.svg" alt="Logo FunkoShop" />
         </a>
         <ul class="main-nav__items">
           <li>
-            <a class="main-nav__link" href="./front/pages/shop/shop.html">Shop</a>
+            <a class="main-nav__link" href="/front/pages/shop/shop.html">Shop</a>
           </li>
           <li><a class="main-nav__link" href="#">Contacto</a></li>
           <li><a class="main-nav__link" href="#">Login</a></li>
@@ -28,7 +28,7 @@ let mainMenuContent = `<div class="main-nav">
       </div>
       <ul class="main-nav__dropdown" id="main-nav__dropdown">
         <li class="main-nav-dropdown__item">
-          <a class="main-nav-dropdown__link" href="./front/pages/shop/shop.html">Shop</a>
+          <a class="main-nav-dropdown__link" href="/front/pages/shop/shop.html">Shop</a>
         </li>
         <li class="main-nav-dropdown__item">
           <a class="main-nav-dropdown__link" href="#">Contacto</a>
